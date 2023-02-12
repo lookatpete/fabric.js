@@ -53,7 +53,7 @@ class ICheckbox extends Checkbox {
 inquirer.registerPrompt('test-selection', ICheckbox);
 
 function build(options = {}) {
-    _.defaults(options, { exclude: ['gestures', 'accessors', 'erasing'] });
+    _.defaults(options, { exclude: ['accessors', 'erasing'] });
     const args = [
         `node`,
         `build.js`,
